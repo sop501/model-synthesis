@@ -1,0 +1,16 @@
+% !TEX program = xelatex
+\documentclass[12pt, letterpaper]{article}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+	\begin{tabular}{ |c|c|c|c| } 
+		\hline
+		Tools & Avg Time(without constraints) & output with constraints & reason \\ 
+		Grimm[2] &250ms &Error: constraints is unsatisfiable  & does not support ocl function exists and names assignment \\ 
+		EMFtoCSP & 200ms&out of search space & constraints too complex \\ 
+		RMG & 200ms&constraints cannot be translated to rmg specification & rmg is limited with graphical addition of constraints \\
+		\hline
+	\end{tabular}
+	
+\end{document}
